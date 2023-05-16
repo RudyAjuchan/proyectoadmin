@@ -5,7 +5,7 @@ require "encabezado.php";
 <div class="container h-100">
     <div class="row justify-content-center align-items-center h-100 mx-auto">
         <div class="col-md-12 text-center">
-            <h3>Seleccione el tipo de conexión</h3>
+            <h3>Seleccione el motor de bd</h3>
             <select name="tipoConexion" id="tipoConexion" class="form-control" onchange="definirTipoBD();">
             <option value="" disabled selected hidden>Seleccione</option>
             <?php
