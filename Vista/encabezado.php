@@ -48,4 +48,4 @@ if ($_SESSION["AdmTI_verificar"] == "" || $_SESSION["AdmTI_verificar"] == null) 
         </div>
     </div>
 
-    <div class="contenido-principal py-5">
+    <div class="contenido-principal py-5 h-100">

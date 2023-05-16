@@ -1,5 +1,6 @@
 <?php
 require 'Controlador.php';
+require 'Cargar.php';
 Class Page extends Controlador{
     public function aux(){
         $this->vista2('pag_login');
@@ -9,6 +10,9 @@ Class Page extends Controlador{
     }
     public function verificar(){
         $this->vista2('pag_confirmar');
+    }
+    public function categorias(){
+        $this->vista2('pag_categoria');
     }
 }
 ?>

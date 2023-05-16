@@ -1,3 +1,13 @@
+.icono {
+    position: relative;
+  }
+  .icono .fas {
+    position: absolute;
+    padding: 12px 17px;
+    pointer-events: none;
+    display: block;
+    transition: all linear 0.5s;
+  }
 .sidebar{
     height: 100vh;
 }

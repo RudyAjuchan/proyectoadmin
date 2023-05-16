@@ -29,8 +29,7 @@ class Conexion{
     try{
         $conexion= new PDO('oci:dbname='.$bd_settings, $user, $pass);
         $conexion->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
-        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Conexión exitosa';
+        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);        
         return $conexion;
     }catch(Exception $e){
         echo 'Error de conexión: '.$e->getMessage();
