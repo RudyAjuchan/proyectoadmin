@@ -35,6 +35,31 @@ if ($_SESSION["AdmTI_verificar"] == "" || $_SESSION["AdmTI_verificar"] == null) 
                             <span>Libros</span>
                         </div>
                     </a>
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/autores">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <span>Autores</span>
+                        </div>
+                    </a>
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/categorias">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-sitemap"></i>
+                            <span>Categorias</span>
+                        </div>
+                    </a>
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/editoriales">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <span>Editoriales</span>
+                        </div>
+                    </a>
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/paises">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>Países</span>
+                        </div>
+                    </a>
+                    
                 </div>
                 <div class="sidebar-footer">
                     <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/Cerrar_session/cerrar">
