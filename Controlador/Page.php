@@ -14,5 +14,15 @@ Class Page extends Controlador{
     public function categorias(){
         $this->vista2('pag_categoria');
     }
+    public function autores(){
+        $this->vista2('pag_autor');
+    }
+    public function editoriales(){
+        $this->vista2('pag_editorial');
+    }
+
+    public function paises(){
+        $this->vista2('pag_pais');
+    }
 }
 ?>
