@@ -1,4 +1,4 @@
-function ingresar_usuario() {
+function enviar_usuario() {
     var formData = new FormData(document.getElementById('form-loginL'));
     //$('#loading-screen').css('display','block');
     $.ajax({

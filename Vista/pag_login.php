@@ -127,7 +127,7 @@
                     <input name="password" type="password" class="input" placeholder="Contraseña" />
                     <input name="confirmpassword" type="password" class="input" placeholder="Confirmar contarseña" />
                 </div>
-                <button  type="button" class="submit-btn" onclick="ingresar_usuario()">Registrar</button>
+                <button  type="button" class="submit-btn" onclick="enviar_usuario()">Registrar</button>
         </div>
     </form>
 
