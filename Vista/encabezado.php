@@ -16,6 +16,7 @@ if ($_SESSION["AdmTI_verificar"] == "" || $_SESSION["AdmTI_verificar"] == null) 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
 </head>
 
@@ -24,12 +25,12 @@ if ($_SESSION["AdmTI_verificar"] == "" || $_SESSION["AdmTI_verificar"] == null) 
     <div class="sidebar" role="cdb-sidebar">
         <div class="sidebar-container">
             <div class="sidebar-header justify-content-between px-4">
-                <a class="sidebar-brand">Admón TI</a>
+                <a href="http://localhost:8070/proyectoadmin/Page/inicio" class="sidebar-brand">Admón TI</a>
                 <a class="sidebar-toggler" onclick="ajustar();"><i class="fa fa-bars"></i></a>
             </div>
             <div class="sidebar-nav">
                 <div class="sidenav">
-                    <a class="sidebar-item" href="#">
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/libros">
                         <div class="sidebar-item-content">
                             <i class="fa-solid fa-book"></i>
                             <span>Libros</span>

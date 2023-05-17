@@ -1,3 +1,22 @@
+#table_search, #table_search2, #table_search3, #table_search4{    
+    background: rgb(236, 236, 236) !important; 
+    width: 100% !important; 
+    position: relative;
+  }
+.content-table{
+    max-height: 150px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .content-search,.content-search2,.content-search3,.content-search4{
+    position: fixed;
+    width: 40%; 
+    
+  }
+  .content-table .pagination,.content-table .dataTables_info, .content-table .dataTables_filter, .content-table .dataTables_length{
+    display: none !important;
+  }
 .icono {
     position: relative;
   }

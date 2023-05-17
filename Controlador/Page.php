@@ -24,5 +24,8 @@ Class Page extends Controlador{
     public function paises(){
         $this->vista2('pag_pais');
     }
+    public function libros(){
+        $this->vista2('pag_libros');
+    }
 }
 ?>
