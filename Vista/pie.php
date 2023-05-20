@@ -7,6 +7,7 @@
 <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../assets/js/navbar.js"></script>
 </body>
 

@@ -30,10 +30,22 @@ if ($_SESSION["AdmTI_verificar"] == "" || $_SESSION["AdmTI_verificar"] == null) 
             </div>
             <div class="sidebar-nav">
                 <div class="sidenav">
+                <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/inicio">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Inicio</span>
+                        </div>
+                    </a>
                     <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/libros">
                         <div class="sidebar-item-content">
                             <i class="fa-solid fa-book"></i>
                             <span>Libros</span>
+                        </div>
+                    </a>
+                    <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/selectBD">
+                        <div class="sidebar-item-content">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Motor de BD</span>
                         </div>
                     </a>
                     <a class="sidebar-item" href="http://localhost:8070/proyectoadmin/page/autores">

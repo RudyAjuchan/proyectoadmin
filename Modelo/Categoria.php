@@ -9,7 +9,7 @@ class Categoria{
         }else if($_SESSION['AdmTI_tipoBD']==2){
             $conexion=$modelo->obtener_conexion_oracle();            
         }
-        $sql="select * from categoria";
+        $sql="select * from categoria order by id_categoria asc";
         $estado=$conexion->prepare($sql);
         $estado->execute();
 

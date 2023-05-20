@@ -3,7 +3,7 @@ require 'Conexion.php';
 
 class Libros{
     function bsucarLibros(){
-        $modelo= new Conexion();        
+        $modelo= new Conexion();                
         if($_SESSION['AdmTI_tipoBD']==1){
             $conexion=$modelo->obtener_conexion();            
         }else if($_SESSION['AdmTI_tipoBD']==2){
@@ -18,6 +18,58 @@ class Libros{
         INNER JOIN categoria c ON c.id_categoria=l.id_categoria
         INNER JOIN pais p ON p.id_pais= l.id_pais";
         $estado=$conexion->prepare($sql);
+        $estado->execute();
+
+        while($result = $estado->fetch()){
+            $rows[]=$result;
+        }
+        if(!isset($rows)){
+            $rows=null;
+        }
+        return $rows;
+    }
+
+    function bsucarLibros2(){
+        $modelo= new Conexion();        
+        session_start();
+        if($_SESSION['AdmTI_tipoBD']==1){
+            $conexion=$modelo->obtener_conexion();            
+        }else if($_SESSION['AdmTI_tipoBD']==2){
+            $conexion=$modelo->obtener_conexion_oracle();            
+        }
+        $sql="SELECT l.id_libro, l.titulo, l.isbn, l.no_paginas, l.no_paginas, l.descripcion, l.anio, l.precio,
+        a.nombre as nombreautor, e.nombre as nombreeditorial,
+        c.nombre as nombrecategoria, p.nombre as nombrepais, 
+        a.id_autor, e.id_editorial, c.id_categoria, p.id_pais FROM libro l 
+        INNER JOIN autor a ON a.id_autor=l.id_autor
+        INNER JOIN editorial e ON e.id_editorial=l.id_editorial
+        INNER JOIN categoria c ON c.id_categoria=l.id_categoria
+        INNER JOIN pais p ON p.id_pais= l.id_pais";
+        $estado=$conexion->prepare($sql);
+        $estado->execute();
+
+        while($result = $estado->fetch()){
+            $rows[]=$result;
+        }
+        if(!isset($rows)){
+            $rows=null;
+        }
+        return $rows;
+    }
+
+    function bsucarLibrosPorCategoria($id_categoria){
+        $modelo= new Conexion();        
+        session_start();
+        if($_SESSION['AdmTI_tipoBD']==1){
+            $conexion=$modelo->obtener_conexion();            
+        }else if($_SESSION['AdmTI_tipoBD']==2){
+            $conexion=$modelo->obtener_conexion_oracle();            
+        }
+        $sql="SELECT l.id_libro, l.titulo, l.no_paginas, c.nombre as nombrecategoria FROM libro l
+        INNER JOIN categoria c ON c.id_categoria=l.id_categoria
+        WHERE l.id_categoria=:id_categoria";
+        $estado=$conexion->prepare($sql);
+        $estado->bindParam(':id_categoria',$id_categoria);
         $estado->execute();
 
         while($result = $estado->fetch()){

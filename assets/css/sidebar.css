@@ -1,3 +1,14 @@
+.content-grafica{
+  box-shadow: -2px 0px 14px 3px rgba(168,168,168,0.75);
+  -webkit-box-shadow: -2px 0px 14px 3px rgba(168,168,168,0.75);
+  -moz-box-shadow: -2px 0px 14px 3px rgba(168,168,168,0.75);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 #table_search, #table_search2, #table_search3, #table_search4{    
     background: rgb(236, 236, 236) !important; 
     width: 100% !important; 
@@ -29,6 +40,7 @@
   }
 .sidebar{
     height: 100vh;
+    position: fixed;
 }
 .sidebar-footer{
     position: absolute;

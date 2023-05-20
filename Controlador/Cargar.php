@@ -245,5 +245,16 @@ class Cargar extends Controlador{
             }
         }
     }
+
+    public function selectCategorias(){        
+        $consultas=$this->modelo('Categoria');
+        $datosAutor = $consultas->buscarCategoria();
+
+        if($datosAutor){            
+            foreach($datosAutor as $DA){
+                echo '<option value="'.$DA['id_categoria'].'">'.$DA['nombre'].'</option>';
+            }
+        }
+    }
 }
 ?>
