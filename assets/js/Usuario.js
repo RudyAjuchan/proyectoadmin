@@ -85,7 +85,7 @@ function verificar(){
                 title: 'Atención',
                 text: '¡Bienvenido!',
             }).then(function () {	        
-                    window.location.href='http://localhost:8070/proyectoadmin/page/inicio';					
+                    window.location.href='http://localhost:8070/proyectoadmin/page/selectBD2';					
             }); 
         }else if(mensaje=="ERROR"){
             swal({

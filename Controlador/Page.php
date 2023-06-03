@@ -30,5 +30,8 @@ Class Page extends Controlador{
     public function selectBD(){
         $this->vista2('pag_motorBD');
     }
+    public function selectBD2(){
+        $this->vista2('pag_motorBD2');
+    }
 }
 ?>
